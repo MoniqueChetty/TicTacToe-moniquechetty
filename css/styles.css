@@ -1,0 +1,139 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 800px;
+    padding: 40px;
+    background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.title{
+    max-width: 500px;
+}
+h2{
+    font-size: 50px;
+}
+.restart{
+    width: 175px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+.space{
+    width: 50px;
+}
+
+.restart:hover{
+    background-color: lime;
+    color: white;
+}
+.playerHead{
+    display: flex;
+    color: lime;
+    font-size: 24px;
+}
+
+.game{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0px;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.board-tile{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 80px;   
+}
+.board-tile:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.board-tile:not(:nth-child(3n)){
+    border-right: 3px solid rgba(137,163,189,0.7);
+}
+.board-tile:not(:nth-last-child(-n+3)){
+    border-bottom: 3px solid rgba(137,163,189,0.7);
+}
+.playerX{
+    flex: 1;
+    /* border-bottom: 5px solid #eee; */
+    padding-bottom: 8px;
+    text-align: center;
+    
+}
+.playerX img, .playerO img{
+    width: 50px;
+    border-radius: 50%;
+}
+.playerO{
+    flex: 1;
+    /* border-bottom: 5px solid #eee; */
+    padding-bottom: 30px;
+    text-align: center;
+}
+.playerO.active{
+    color: lime;
+    /* border-color: #D7BAFB; */
+}
+.playerX.active{
+    color: rgb(240, 46, 46);
+    /* border-color: #42bed7; */
+}
+.tileX{
+    color: rgba(255,255,255,0.1);
+    width: 100%;
+    background: URL("http://www.mariowiki.com/images/8/8b/Marioicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+.tileO{
+    color: rgba(255,255,255,0.1);
+    width: 100%;
+    background: URL("../assets/Luigi.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    
+}
+
+.tileWinner{
+    background-color: purple;
+}
+
+@media(max-width:1000px){
+    .wrapper{
+        flex-direction: column;
+        /* justify-content: space-between; */
+        
+    }
+    .leftSection{
+        margin-bottom: 50px;
+    }
+}
