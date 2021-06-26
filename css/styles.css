@@ -137,3 +137,16 @@ h2{
         margin-bottom: 50px;
     }
 }
+
+.monique{
+    background-color: #578ff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    height: 30px;
+}
+.monique p {
+    height: 95%;
+}
