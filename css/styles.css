@@ -1,13 +1,16 @@
-body{
-    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
-body{
+
+.appwrap{
     background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png)  ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-color: #578ff7;
-
-
 }
 .wrapper{
     display: flex;
@@ -18,16 +21,9 @@ body{
     height: 800px;
     padding: 40px;
     /* background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png)  ; */
-    background-repeat: no-repeat;
-   
-   
+    /* background-repeat: no-repeat;  */
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
+
 .title{
     max-width: 500px;
 }
@@ -194,7 +190,7 @@ button{
     
     
 }
-.winO{
+.winO .winX{
     /* background-color: white; */
     width: 30vw;
     height: 30vw;
