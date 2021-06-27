@@ -1,3 +1,6 @@
+body{
+    background-color: #578ff7;
+}
 .wrapper{
     display: flex;
     justify-content: space-between;
@@ -6,8 +9,10 @@
     max-width: 1440px;
     height: 800px;
     padding: 40px;
-    background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png);
-
+    background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png)  ;
+    background-repeat: no-repeat;
+   
+   
 }
 *{
     box-sizing: border-box;
@@ -129,14 +134,33 @@ h2{
 
 @media(max-width:1000px){
     .wrapper{
-        flex-direction: column;
-        /* justify-content: space-between; */
-        
+        flex-direction: column;        
     }
     .leftSection{
         margin-bottom: 50px;
+        
     }
+    .game{
+        width:58vw;
+        height: 58vw;
+        
+    }
+    h2{
+        font-size: 30px;
+        margin: 10px;
+    }
+    .restart{
+        margin: 10px;
+    }
+    .space{
+        height: 1px;
+    }
+    .monique{
+        margin-top: 50px;
+    }
+    
 }
+
 
 .monique{
     background-color: #578ff7;
@@ -146,6 +170,8 @@ h2{
     align-content: center;
     color: white;
     height: 30px;
+    
+    
 }
 .monique p {
     height: 95%;
