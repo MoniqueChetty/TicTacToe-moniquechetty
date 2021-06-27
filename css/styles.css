@@ -199,6 +199,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
 }
 .winO img{
     width: 100%;
@@ -235,7 +236,8 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    transition: all 1s ease;
 }
 .winX img{
     width: 60%;  
