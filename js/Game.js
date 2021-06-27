@@ -12,17 +12,23 @@ export default class Game {
     }
   }
   makeMove(i) {
+    //check if endOfGame > already end of game return
     if (this.endOfGame()) {
       return;
     }
+    //check if board tile has value > already filled return
     if (this.board[i]) {
       return;
     }
+    //add "X"or "O" to arry
     this.board[i] = this.turn;
-    let winningCombination = this.findWinningCombinations();
+    //check if winner> returns winning combernation
+    let winningCombination = this.findWinningCombinations(); //[0,1,2]
+    //if not winner next turn
     if (!winningCombination) {
       this.nextTurn();
     }
+    // proceed to update board
   }
 
   findWinningCombinations() {

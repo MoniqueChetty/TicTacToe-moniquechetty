@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-        
+    <!-- <img src="https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png" alt="" srcset=""> -->
+            
     <div class="wrapper">
-        
         <div class="leftSection">
             <div>
                 <h2>Let's Play<br/>the Tic-Tac-Toe<br/>Game!</h2>
@@ -45,14 +45,30 @@
                     <div class="board-tile" data-index="8"></div>
 
                 </div>
-        </div>
+            </div>
         </div>
     </div>
+  
 
     <div class="monique"><p>Made with ❤️ by Monique Chetty</p></div>
-    <audio controls autoplay>
-        <source src="./assets/Mario.mpeg" type="audio/mpeg">
-    </audio>
+    <div class="audio">
+         <audio id="player" src="./assets/Mario.mpeg"></audio>
+        <div> 
+        <button onclick="document.getElementById('player').play()">Play</button> 
+        <button onclick="document.getElementById('player').pause()">Pause</button> 
+        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+        </div>
+    </div>
+    <div class="winO" id="winO">
+        <span>Winner</span>
+        <img src="./assets/Luigijump.png" alt="" srcset="">
+    </div>
+    <div class="winX" id="winX">
+        <span>Winner</span>
+        <img src="./assets/mariojump.png" alt="" srcset="">
+    </div>
+   
     <script src="../js/main.js" type="module"></script>
 </body>
 </html>

@@ -11,12 +11,14 @@ document.querySelector('.restart').addEventListener('click', () => {
 let tiles = document.querySelectorAll('.board-tile');
 tiles.forEach((tile) => {
   tile.addEventListener('click', () => {
-    onTileClick(tile.dataset.index);
+    onTileClick(tile.dataset.index); //take index no to onTileClick
   });
 });
 
 function onTileClick(i) {
+  //i is the clicked index on the board
   game.makeMove(i);
+  //game hold info on array + who should play next
   gameview.updateBoard(game);
 }
 function newGame() {
