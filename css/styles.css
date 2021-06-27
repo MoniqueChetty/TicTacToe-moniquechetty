@@ -205,6 +205,22 @@ button{
     max-height: 80vh;
     
 }
+.winX h3{
+   text-shadow:
+       3px 3px 0 red,
+     -1px -1px 0 red,  
+      1px -1px 0 red,
+      -1px 1px 0 red,
+       1px 1px 0 red;
+}
+.winO h3{
+   text-shadow:
+       3px 3px 0 lime,
+     -1px -1px 0 lime,  
+      1px -1px 0 lime,
+      -1px 1px 0 lime,
+       1px 1px 0 lime;
+}
 .winX{
     /* background-color: white; */
     width: 30vw;
