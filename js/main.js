@@ -4,7 +4,7 @@ import GameView from './GameView.js';
 let game = new Game();
 let gameview = new GameView();
 
-document.getElementById('player').volume -= 0.5;
+document.getElementById('player').volume -= 0.2;
 
 document.querySelector('.restart').addEventListener('click', () => {
   newGame();
