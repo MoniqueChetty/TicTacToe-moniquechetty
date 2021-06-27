@@ -6,6 +6,8 @@
 }
 
 .appwrap{
+    width: 100vw;
+    height: 100vh;
     background-image: url(https://i.pinimg.com/originals/99/bb/69/99bb69e4680b0bc9c4c806f5f0f87ad5.png)  ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +80,6 @@ h2{
     -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-
 }
 .board-tile{
     display: flex;
@@ -101,8 +102,7 @@ h2{
     flex: 1;
     /* border-bottom: 5px solid #eee; */
     padding-bottom: 8px;
-    text-align: center;
-    
+    text-align: center;  
 }
 .playerX img, .playerO img{
     width: 50px;
@@ -136,8 +136,7 @@ h2{
     background: URL("../assets/Luigi.png");
     background-size: 70%;
     background-repeat: no-repeat;
-    margin-left: 30px;
-    
+    margin-left: 30px;   
 }
 .audio{
     /* display: flex;
@@ -145,8 +144,7 @@ h2{
     position: fixed;
     top: 0;
     right: 0;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 button{
     background-color: #578ff7;
@@ -166,13 +164,11 @@ button{
         flex-direction: column;        
     }
     .leftSection{
-        margin-bottom: 50px;
-        
+        margin-bottom: 50px;   
     }
     .game{
         width:58vw;
-        height: 58vw;
-        
+        height: 58vw;   
     }
     h2{
         font-size: 30px;
@@ -186,11 +182,9 @@ button{
     }
     .monique{
         margin-top: 50px;
-    }
-    
-    
+    }   
 }
-.winO .winX{
+.winO {
     /* background-color: white; */
     width: 30vw;
     height: 30vw;
@@ -204,7 +198,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-     align-items: center;
+    align-items: center;
 }
 .winO img{
     width: 100%;
@@ -225,16 +219,11 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .winX img{
-    width: 60%;
-    
-    
+    width: 60%;  
 }
-
-
 
 .monique{
     background-color: #578ff7;
@@ -246,10 +235,7 @@ button{
     height: 30px;
     width: 100%;
     position: fixed;
-    bottom: 0;
-    
-    
-    
+    bottom: 0;  
 }
 .monique p {
     height: 95%;
